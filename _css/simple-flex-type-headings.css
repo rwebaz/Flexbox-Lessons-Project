@@ -1,0 +1,111 @@
+/* Css document */
+
+/* Note: Hiding the h1 tag */
+h1.negative-primary-heading {
+	text-indent: -9000em;
+	position: absolute;
+	/* z-index: 5; */
+	/* left: 0; */
+	/* top: 0; */
+	}
+
+/* Page Headings: h2 Default container attributes */
+h2 {
+	color: #000;
+	font-size: 1.5em;
+	}
+	
+h2.underline-this-maroon {
+	color: #600;
+	text-decoration: underline;
+	}
+	
+h2.align-left {
+		text-align: left;
+		/* text-decoration: underline; */
+		text-decoration: none;
+		margin: 0 2px 0 0;
+	}
+	
+h2.align-right {
+		text-align: right;
+		/* text-decoration: underline; */
+		text-decoration: none;
+		margin: 0 2px 0 0;
+	}
+	
+h2.trebuchet {
+	font: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+	font-size: 1.714285714em;
+	font-style: normal;
+	line-height: 1.857142857;
+	font-weight: 500;
+	font-variant: normal;
+	text-transform: none;
+	/* color: #000; */
+	text-decoration: none;
+	height: auto;
+	width: auto;
+	float: left;
+	overflow: visible;
+	position: relative;
+	visibility: visible;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	clip: rect(auto,auto,auto,auto);}
+
+/* Page Headings: h3 Default container attributes */
+h3 {
+	color: #000;
+	}
+
+/* h3 container classes */
+
+h3.align-left {
+		text-align: left;
+		/* text-decoration: underline; */
+		text-decoration: none;
+		margin: 0 2px 0 0;
+	}
+	
+h3.align-center {
+		text-align: center;
+		font-weight: bolder;
+		/* text-decoration: underline; */
+		text-decoration: none;
+		margin: 0 2px 0 0;
+	}
+	
+h3.align-right {
+		text-align: right;
+		/* text-decoration: underline; */
+		text-decoration: none;
+		margin: 0 2px 0 0;
+	}
+
+/* Page Headings: h4 Default container attributes */
+h4 {
+	color: #000;
+	}
+	
+h4 > center-this-maroon {
+	text-align: center;
+	text-transform: none;
+	text-decoration: none;
+	color: #600;
+	}
+	
+	
+/* Page Headings: h5 Default container attributes */
+h5 {
+	color: #000;
+	}
+
+/* Page Headings: h6 Default container attributes */
+h6 {
+	color: #000;
+	}
+	
+time {
+	color: #000;

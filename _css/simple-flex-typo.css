@@ -1,0 +1,98 @@
+/* CSS Document */
+
+/* =============================================================================
+   Typography Default (from boilerplate)
+   ========================================================================== */
+	 
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+/* =============================================================================
+   Typography Custom
+   ========================================================================== */
+	 
+/*=================================================
+	P (paragraph) default container attributes
+	=================================================*/
+p {
+	text-align: left;
+	}
+
+/* 	Paragraph container classes */
+
+/* Note: Can also be used on a <span> tag */
+.compiled-by {
+	text-align: right;
+	}
+
+/* Note: Advise against using directly on a <span> tag.
+		Rather ... pop it on an enclosing <p> tag */
+p.indent-this {
+	text-indent: 1.75em;
+	}
+	
+p.left-align-this {
+	text-align: left;
+	text-transform: none;
+	text-decoration: none;
+	}
+	
+p.center-this {
+	text-align: center;
+	text-transform: none;
+	text-decoration: none;
+	}
+	
+p.center-this-maroon {
+	text-align: center;
+	text-transform: none;
+	text-decoration: none;
+	color: #600;
+	padding-bottom: 1em;
+	}
+	
+p.right-align-this {
+	text-align: right;
+	text-transform: none;
+	text-decoration: none;
+	}
+	
+/* Note: Advise for using directly on a <span> tag */	
+span.underline-this {
+	text-decoration:underline;
+	}
+	
+/* Note: The 'root' of the <html> tag is default 16px (100%) from the browser
+		Setting the <body> tag to 14px requires 14/16 = 0.875rem
+			Next, setting all elements is determined from the <body> tag.
+				Hence, 20px target here yields 20/14 em */	
+span.increase-font-size-to-20px {
+	font-size: 1.428571428em;
+	}
