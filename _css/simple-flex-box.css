@@ -1,0 +1,242 @@
+/* CSS Document */
+
+/* Basic Typography Defaults */
+@import url('simple-flex-typo.css');
+
+/* Basic Page Headings Defaults */
+@import url('simple-flex-type-headings.css');
+
+/* Basic Typography Defaults */
+@import url('simple-flex-forms.css');
+
+/* Manage the Html Tag */
+html {
+	font-family: "Lucida Sans", "Trebuchet MS", "Arial", "Helvetica", "Lucida Console", "Palatino Linotype", "Book Antiqua";
+	font-size: 16px;
+	/* font-size: 100%; */
+	/* overflow-y: scroll; */
+	/* -moz-text-size-adjust: 100%; */
+	/* -ms-text-size-adjust: 100%; */
+	/* -webkit-text-size-adjust: 100%; */
+	/* text-size-adjust: 100%; */
+	/* -moz-background-origin: border-box; */
+	/* -webkit-background-origin: border-box; */
+	/* background-origin: border-box; */
+	/* background-size: 100% 100%; */
+	}
+	
+/* Manage the Html Tag classes */
+html#Mt-Hood {
+	background: url(../_images/_bgrn/Mt-Hood-Close-Up-CU-200700-34028080-light-061015-original.svg) no-repeat center center fixed;
+	background-size: cover;
+	}
+	
+/* Manage the Body Tag */
+body {
+	/* font-family: sans-serif; */
+	/* font: 24px helvetica; */
+	/* font-size: 13px; */
+	/* line-height: 1.231; */
+	/* color: #222; */
+	/* background: #999; */
+	margin: 0;
+	}
+	
+/* Manage the Body Tag classes */
+body.basic {
+	font-size: .875rem;
+	line-height: 1.231;
+	color: #000;
+	}
+
+header {
+	min-height: 6.25em;
+	max-height: auto;
+	background: rgba(204,204,255,.15); /* lavender */
+	display: block;
+	outline: 1px dotted red;
+	padding: 5px;
+	border: 2px solid green; 
+	border-radius: 7pt;
+	margin: 4px;
+	}
+	
+div#main-header {
+	/* Turn the main-header element into a flex container */
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row;
+	flex-flow: row;
+	}
+
+div#main-header > hgroup#a {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-variant: normal;
+	font-size: 1.714285714em;
+	font-style: oblique;
+	line-height: 1.857142857em;
+	font-weight: 500;
+	/* Give the 'hgroup' inflow-child (flex item) of the parent main-header element a position in the 'main-header' flex container */
+	-webkit-flex: 1 3 50%;
+	flex: 1 3 50%; /* Three values: flex-grow | flex-shrink | flex-basis */
+	-webkit-order: 1;
+	order: 1;
+	}
+	
+div#main-header > hgroup#b {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-variant: normal;
+	font-size: 1.714285714em;
+	font-style: oblique;
+	line-height: 1.857142857em;
+	font-weight: 500;
+	text-align: right;
+	/* Give the 'section' inflow-child (flex item) of the parent main-header element a position in the 'main-header' flex container */
+	-webkit-flex: 1 3 50%; 
+	flex: 1 3 50%; /* Three values: flex-grow | flex-shrink | flex-basis */
+	-webkit-order: 2;
+	order: 2;
+	}
+	
+div#main-body {
+	min-height: 800px;
+	padding: 0;
+	border: none;
+	margin: 0;
+	/* Turn the div main-body element into a flex container */
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row;
+	flex-flow: row;
+	}
+	
+div#main-body > nav {
+	background: rgba(204,255,255,.15); /* sky blue */
+	outline: 1px dotted red;
+	padding: 5px;
+	border: 2px solid green; /* #eebb55 #8888bb #ccccff #cccc33 */
+	border-radius: 7pt;
+	margin: 4px;
+	/* Give the nav child of the main-body element a position in the main-body flex container */
+	-webkit-flex: 1 6 20%;
+	flex: 1 6 20%; /* Three values: flex-grow | flex-shrink | flex-basis */
+	-webkit-order: 1;
+	order: 1;
+	}
+	
+div#main-body > article {
+	background: rgba(255,204,204,.15); /* rose */
+	outline: 1px dotted red;
+	padding: 5px;
+	border: 2px solid green; /* #eebb55 #8888bb #ccccff #cccc33 */
+	border-radius: 7pt;
+	margin: 4px;
+	-webkit-flex: 3 1 60%;
+	flex: 3 1 60%; /* Three values: flex-grow | flex-shrink | flex-basis */
+	-webkit-order: 2;
+	order: 2;
+	}
+
+div#main-body > aside {
+	background: rgba(204,255,255,.15); /* sky blue */
+	outline: 1px dotted red;
+	padding: 5px;
+	border: 2px solid green; /* #eebb55 #8888bb #ccccff #cccc33 */
+	border-radius: 7pt;
+	margin: 4px;
+	/* Give the aside child of the main-body element a position in the main-body flex container */
+	-webkit-flex: 1 6 20%;
+	flex: 1 6 20%; /* Three values: flex-grow | flex-shrink | flex-basis */
+	-webkit-order: 3;
+	order: 3;
+	}
+	
+footer {
+	min-height: 6.25em;
+	max-height: auto;
+	background: rgba(204,204,255,.15); /* lavender */
+	display: block;
+	outline: 1px dotted red;
+	padding: 5px;
+	border: 2px solid green; 
+	border-radius: 7pt;
+	margin: 4px;
+	}
+	
+/*======================================
+	Sections
+	======================================*/
+	
+#secta-99 {
+	width: 100%
+	}
+	
+/*=================================================
+	Aside semantic default container attributes
+	=================================================*/
+aside {
+	display: block;
+	margin: 0;
+	/* order: 4; */
+	/* flex: 0 1 240px; */
+	}
+	
+/* Aside semantic container IDs 
+div#aside {
+	* some attribute *
+	} */
+	
+/* Aside semantic container classes */
+aside.hint {
+	width: auto;
+	height: auto;
+	}
+
+/* Too narrow of screen to support a three-column display? Solution: Media Query */
+
+@media all and
+	(max-width: 800px) {
+		
+	div#main-header {
+		-webkit-flex-flow: column;
+		flex-direction: column;	
+		}
+	
+	div#main-body {
+		-webkit-flex-flow: column;
+		flex-direction: column;	
+		}
+		
+/*=================================================
+	Page semantic default container attributes
+		Note: Page is NOT a valid semantic Html tag
+	=================================================*/
+	
+/* Page semantic container IDs 
+div#div#page {
+		-webkit-flex-flow: column;
+		flex-direction: column;	
+		} */
+		
+	div#main-header > hgroup#a, div#main-header > hgroup#b {
+		/* Return to document order */
+		-webkit-order: 0;
+		order: 0;
+		}
+	
+	div#main-body > article, div#main-body > nav, div#main-body > aside {
+		/* Return to document order */
+		-webkit-order: 0;
+		order: 0;
+		}
+		
+	div#main-header > hgroup#a, div#main-header > hgroup#b {
+		min-height: 6.25em;
+		max-height: auto;
+		}
+		
+	div#main-body > nav, div#main-body > aside { /* , /* header */ /* , /* footer */
+		min-height: 50px;
+		max-height: 50px;
+		}
+}
