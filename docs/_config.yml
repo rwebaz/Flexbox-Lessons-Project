@@ -5,9 +5,9 @@
 # github: [metadata]
 theme: "jekyll-theme-cayman"
 # repository: https://www.github.com/rwebaz/Flex-Box-Lessons-Project
-title: "Go Lessons Project"
-tagline: "A GitHub repo of Lessons and Articles that emphasize the GO development engine"
-description: "A GitHub repo of Lessons and Articles that emphasize the GO development engine"
+title: "Flex Box Lessons Project"
+tagline: "A GitHub repo of Lessons and Articles that emphasize the Flex Box protocol"
+description: "A GitHub repo of Lessons and Articles that emphasize the Flex Box protocol"
 twitter:
     username: "mminail"
 author:
