@@ -1,9 +1,7 @@
 # Site settings
-#
-# Date of this Update to Config-template file ver 12-31-2017
-#
-# github: [metadata]
-#
+# 
+# Date of this Update to Config-template file ver 02-08-2018
+# 
 # Uncomment theme for docs folder
 theme: "jekyll-theme-cayman"
 #
@@ -13,9 +11,10 @@ theme: "jekyll-theme-cayman"
 # There are approx sixty auxillary repositories as of 12-31-17
 # repository: https://www.github.com/rwebaz/Flex-Box-Lessons-Project
 #
-title: "Flex Box Lessons Project"
-tagline: "A GitHub repo of Lessons and Articles that emphasize the Flex Box protocol"
-description: "A GitHub repo of Lessons and Articles that emphasize the Flex Box protocol."
+lang: "en-US"
+title: "Flexbox Lessons Project"
+tagline: "A GitHub repo of Lessons and Articles that emphasize the Mozilla Flex Box protocol"
+description: "The Flex Box Lessons Project, or FBLP is a GitHub repo of Lessons and Articles emphasizing the Mozilla Flex Box protocol."
 twitter:
     username: "mminail"
 author:
@@ -23,8 +22,8 @@ author:
     email: "mminail@icloud.com"
     github_username: "rwebaz"
     twitter_username: "rwebaz"
-## The 'baseurl' is the subpath of your designated project, e.g. /Liquid-Lessons-Project or /blog or simply "/"
-baseurl: "/Flex-Box-Lessons-Project"
+# The 'baseurl' is the subpath of your designated project, e.g. /Blank-Lessons-Project or /blog or simply "/"
+baseurl: "/Flexbox-Lessons-Project"
 # The 'url' is the parental web address of your designated project, e.g. /https://mminail.github.io
 url: "https://rwebaz.github.io"
 exclude: ['README.md']
@@ -37,6 +36,7 @@ kramdown:
     math_engine: "mathjax"
 timezone: "America/Phoenix"
 google_analytics: [UA-44765001-34]
+# Settings For Default Keys: Use a scope/values pair
 defaults:
   - scope:
       path: "assets/img"
@@ -54,27 +54,31 @@ defaults:
       image: "true"
 defaults:
   - scope:
+      path: "assets/img/ico"
+    values:
+      image: "true"
+defaults:
+  - scope:
       path: "" 
       type: "pages"
     values:
-      layout: "default"
-      author: "Robert Weber, Director"
+      category: "flexbox"
 defaults:
   - scope:
       path: "pages"
       type: "pages"
     values:
-      layout: "default" 
-      author: "Robert Weber, Director"
+      category: "flexbox"
+excerpt_separator: <!-- this is a literal excerpt separator -->
 collections:
-  collection_CFFP:
+  gists:
     output: "true"
 defaults:
   - scope:
-      path: ""
-      type: "collection_LLP"
+      path: "_gists"
+      type: "pages"
     values:
-      layout: "page"
+      category: "flexbox"
 plugins_dir:
   - jekyll-feed
   - jekyll-seo-tag
@@ -82,3 +86,4 @@ plugins_dir:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - Gemfile.old
